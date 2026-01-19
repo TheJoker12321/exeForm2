@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+    <body>
+    
+        <form action="http://localhost:3001/register" method="post">
+
+            <fieldset>
+
+                <legend>Register user</legend>
+                <label for="fullName">Full name:</label>
+                <input id="fullName" type="text" name="fullName" required>
+            <br>
+            <br>
+                <label for="email">Email: </label>
+                <input id="email" type="email" name="email" required>
+            <br>
+            <br>
+                <label for="age">Age: </label>
+                <input id="age" type="number" name="age" required>
+            <br>
+            <br>
+                <label for="ganre">mail</label>
+                <input id="ganre" type="radio" name="ganre" value="mail" required>
+                
+                <label for="ganre">femail</label>
+                <input id="ganre" type="radio" name="ganre" value="femail" required>
+
+            <br>
+            <br>
+
+                <select name="preferredCourse" id="courses" required>
+                    <option value="math">math</option>
+                    <option value="science">science</option>
+                    <option value="programing">programing</option>
+                </select>
+
+            <br>
+            <br>
+            
+                <label for="confirm">Do you agree to the terms</label>
+                <input id="confirm" type="checkbox" name="bylawsApproval" value="true" required>
+
+            <br>
+            <br>
+
+                <button type="submit">submit</button>
+
+            </fieldset>
+
+        </form>
+
+    </body>
+</html>
