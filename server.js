@@ -1,5 +1,6 @@
 import express from 'express'
-import { sequelize,  User } from './models/Student.js'
+import { sequelize } from './models/Student.js'
+import { User } from './models/createTable.js'
 
 const PORT = 3001
 
@@ -29,7 +30,7 @@ async function start() {
 
     } catch (err) {
 
-        throw new Error ("Failed to start:", err.message);
+        throw new Error (err.sqlMessage);
 
     }
 }
